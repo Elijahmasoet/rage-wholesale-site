@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-18407151246"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-18407151246");
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Rage Wholesale — Australia-Based Bulk Clothing Lots for Resellers
+    </title>
+    <meta
+      name="description"
+      content="Australia-based wholesale clothing supply. Branded NWT activewear, premium branded apparel, vintage band and tour tees, Y2K stock. Bulk lots for Whatnot and eBay sellers. No public catalogue."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #efebe1;
+        --ink: #151412;
+        --stamp: #b3202c;
+        --kraft: #a08a63;
+        --rule: #3a372f;
+        --paper-dark: #e4dfd2;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+      body {
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Archivo", system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.55;
+      }
+      .mono {
+        font-family: "IBM Plex Mono", monospace;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* ---------- top strip ---------- */
+      .topstrip {
+        border-bottom: 2px solid var(--ink);
+        background: var(--paper);
+      }
+      .topstrip .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .topstrip a {
+        color: var(--ink);
+        text-decoration: none;
+        border-bottom: 1px solid var(--kraft);
+      }
+      .topstrip a:hover,
+      .topstrip a:focus-visible {
+        color: var(--stamp);
+        border-color: var(--stamp);
+      }
+
+      /* ---------- header / dispatch label ---------- */
+      header {
+        border-bottom: 2px solid var(--ink);
+      }
+      .label-grid {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: end;
+        gap: 24px;
+        padding: 56px 0 36px;
+      }
+      h1 {
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(52px, 9vw, 118px);
+        line-height: 0.9;
+        letter-spacing: -0.015em;
+        text-transform: uppercase;
+      }
+      h1 .r2 {
+        display: block;
+        color: var(--stamp);
+      }
+      .label-meta {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-align: right;
+        line-height: 1.9;
+        border: 2px solid var(--ink);
+        padding: 14px 18px;
+        background: var(--paper-dark);
+      }
+      .label-meta b {
+        font-weight: 600;
+        color: var(--stamp);
+      }
+      .tagline {
+        padding: 0 0 44px;
+        max-width: 640px;
+        font-size: clamp(17px, 2.2vw, 21px);
+        font-weight: 500;
+      }
+      .tagline .stampword {
+        display: inline-block;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--stamp);
+        border: 1.5px solid var(--stamp);
+        padding: 1px 7px;
+        transform: rotate(-1.5deg);
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+      .cta-row {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        padding-bottom: 56px;
+      }
+      .btn {
+        display: inline-block;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        text-decoration: none;
+        padding: 15px 26px;
+        border: 2px solid var(--ink);
+        color: var(--ink);
+        background: transparent;
+        cursor: pointer;
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+      .btn:hover,
+      .btn:focus-visible {
+        background: var(--ink);
+        color: var(--paper);
+      }
+      .btn.primary {
+        background: var(--stamp);
+        border-color: var(--stamp);
+        color: var(--paper);
+      }
+      .btn.primary:hover,
+      .btn.primary:focus-visible {
+        background: var(--ink);
+        border-color: var(--ink);
+      }
+      :focus-visible {
+        outline: 3px solid var(--stamp);
+        outline-offset: 3px;
+      }
+
+      /* ---------- section headers ---------- */
+      .sec-head {
+        display: flex;
+        align-items: baseline;
+        gap: 16px;
+        padding: 44px 0 22px;
+      }
+      .sec-head h2 {
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(24px, 3.4vw, 34px);
+        text-transform: uppercase;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+      }
+      .sec-head .fill {
+        flex: 1;
+        border-bottom: 2px solid var(--ink);
+        transform: translateY(-6px);
+      }
+      .sec-head .code {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        color: var(--kraft);
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      /* ---------- manifest table ---------- */
+      .manifest {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 14px;
+      }
+      .manifest th {
+        text-align: left;
+        font-size: 11.5px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        border-top: 2px solid var(--ink);
+        border-bottom: 2px solid var(--ink);
+        padding: 10px 14px 10px 0;
+        color: var(--ink);
+      }
+      .manifest td {
+        border-bottom: 1px solid var(--rule);
+        padding: 13px 14px 13px 0;
+        vertical-align: top;
+      }
+      .manifest tr:last-child td {
+        border-bottom: 2px solid var(--ink);
+      }
+      .manifest .cat {
+        font-weight: 600;
+      }
+      .manifest .qty {
+        color: var(--stamp);
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      .manifest .note {
+        font-family: "Archivo", sans-serif;
+        color: #4a463c;
+        font-size: 14px;
+      }
+      .manifest-foot {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        color: var(--kraft);
+        padding: 12px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      /* ---------- how it works ---------- */
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid var(--ink);
+      }
+      .step {
+        padding: 26px 24px 30px;
+        border-right: 2px solid var(--ink);
+        background: var(--paper);
+      }
+      .step:last-child {
+        border-right: none;
+      }
+      .step .k {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--stamp);
+        display: block;
+        margin-bottom: 12px;
+      }
+      .step h3 {
+        font-family: "Archivo Black", sans-serif;
+        font-size: 19px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        letter-spacing: 0.005em;
+      }
+      .step p {
+        font-size: 15px;
+        color: #33302a;
+      }
+
+      /* ---------- who it's for ---------- */
+      .buyers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        border-top: 2px solid var(--ink);
+      }
+      .buyer {
+        padding: 22px 22px 26px 0;
+        border-bottom: 1px solid var(--rule);
+      }
+      .buyer h3 {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 8px;
+      }
+      .buyer p {
+        font-size: 14.5px;
+        color: #33302a;
+      }
+
+      /* ---------- inquiry ---------- */
+      .inquiry {
+        background: var(--ink);
+        color: var(--paper);
+        margin-top: 64px;
+      }
+      .inquiry .wrap {
+        padding-top: 56px;
+        padding-bottom: 64px;
+      }
+      .inquiry h2 {
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(28px, 4.5vw, 46px);
+        text-transform: uppercase;
+        line-height: 1.02;
+        max-width: 620px;
+      }
+      .inquiry h2 span {
+        color: var(--stamp);
+        -webkit-text-stroke: 0;
+      }
+      .inquiry p.lede {
+        max-width: 560px;
+        margin: 18px 0 30px;
+        color: #c9c4b6;
+        font-size: 16.5px;
+      }
+      form {
+        max-width: 560px;
+        display: grid;
+        gap: 16px;
+      }
+      .field label {
+        display: block;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11.5px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        color: #c9c4b6;
+        margin-bottom: 7px;
+      }
+      .field input,
+      .field select,
+      .field textarea {
+        width: 100%;
+        background: transparent;
+        border: 2px solid #4a473e;
+        color: var(--paper);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 15px;
+        padding: 12px 14px;
+        transition: border-color 0.15s;
+      }
+      .field select {
+        appearance: none;
+        background-image:
+          linear-gradient(45deg, transparent 50%, #c9c4b6 50%),
+          linear-gradient(135deg, #c9c4b6 50%, transparent 50%);
+        background-position:
+          calc(100% - 20px) 55%,
+          calc(100% - 14px) 55%;
+        background-size: 6px 6px;
+        background-repeat: no-repeat;
+      }
+      .field select option {
+        color: var(--ink);
+      }
+      .field input:focus,
+      .field select:focus,
+      .field textarea:focus {
+        border-color: var(--stamp);
+        outline: none;
+      }
+      .field textarea {
+        min-height: 110px;
+        resize: vertical;
+      }
+      .form-note {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        color: #8b867a;
+        letter-spacing: 0.03em;
+      }
+
+      /* ---------- footer ---------- */
+      footer {
+        border-top: 2px solid #4a473e;
+        background: var(--ink);
+        color: #8b867a;
+      }
+      footer .wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 26px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      footer a {
+        color: #c9c4b6;
+        text-decoration: none;
+        border-bottom: 1px solid #4a473e;
+      }
+      footer a:hover,
+      footer a:focus-visible {
+        color: var(--paper);
+        border-color: var(--stamp);
+      }
+
+      /* ---------- responsive ---------- */
+      @media (max-width: 860px) {
+        .steps {
+          grid-template-columns: 1fr;
+        }
+        .step {
+          border-right: none;
+          border-bottom: 2px solid var(--ink);
+        }
+        .step:last-child {
+          border-bottom: none;
+        }
+        .buyers {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 640px) {
+        .label-grid {
+          grid-template-columns: 1fr;
+          align-items: start;
+          padding-top: 40px;
+        }
+        .label-meta {
+          text-align: left;
+          justify-self: start;
+        }
+        .buyers {
+          grid-template-columns: 1fr;
+        }
+        .manifest .note {
+          display: none;
+        }
+        .sec-head h2 {
+          white-space: normal;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topstrip">
+      <div class="wrap">
+        <span>Rage Wholesale — Australia</span>
+        <span><a href="#inquiry">Get on the Stock List →</a></span>
+      </div>
+    </div>
+
+    <header>
+      <div class="wrap">
+        <div class="label-grid">
+          <h1>Rage<span class="r2">Wholesale</span></h1>
+          <div class="label-meta">
+            Origin: Melbourne, AU<br />
+            Freight: Domestic + Export<br />
+            Terms: <b>Wholesale Only</b><br />
+            Status: Taking New Buyers
+          </div>
+        </div>
+        <p class="tagline">
+          <span class="stampword">Bulk Only</span>
+          Australia-based wholesale lots for Whatnot and eBay sellers. You tell
+          us how you sell. We send photos of a lot that fits. No public
+          catalogue.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#inquiry">Become a Buyer</a>
+          <a class="btn" href="#manifest">What We Carry</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap" id="manifest">
+        <div class="sec-head">
+          <h2>Stock Manifest</h2>
+          <div class="fill"></div>
+          <span class="code">Rotating Supply</span>
+        </div>
+        <table class="manifest">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Condition</th>
+              <th>Volume</th>
+              <th class="note-h">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cat">Branded Activewear &amp; Sportswear</td>
+              <td>New with tags</td>
+              <td class="qty">500–2,000+ pc lots</td>
+              <td class="note">
+                Branded NWT activewear and sportswear. High-volume repeatable
+                lines.
+              </td>
+            </tr>
+            <tr>
+              <td class="cat">Premium Branded Apparel</td>
+              <td>New with tags</td>
+              <td class="qty">Per pc / per kg</td>
+              <td class="note">Premium branded apparel and collab pieces.</td>
+            </tr>
+            <tr>
+              <td class="cat">Vintage Band &amp; Tour Tees</td>
+              <td>Vintage, graded</td>
+              <td class="qty">Curated lots</td>
+              <td class="note">90s–00s vintage band and tour tees, graded.</td>
+            </tr>
+            <tr>
+              <td class="cat">Vintage &amp; Y2K General</td>
+              <td>Vintage, graded</td>
+              <td class="qty">Mixed lots</td>
+              <td class="note">
+                Vintage and Y2K era stock for curated resellers.
+              </td>
+            </tr>
+            <tr>
+              <td class="cat">Womens Fashion Mixed</td>
+              <td>Mixed grade</td>
+              <td class="qty">Per kg</td>
+              <td class="note">Kg bundles for volume sellers.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="manifest-foot">
+          Stock rotates weekly · Photos + counts on the offer, not a public
+          catalogue
+        </p>
+      </section>
+
+      <section class="wrap">
+        <div class="sec-head">
+          <h2>How It Works</h2>
+          <div class="fill"></div>
+          <span class="code">Buyer Process</span>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="k">Step 1 — Form</span>
+            <h3>Tell us how you sell</h3>
+            <p>
+              Fill in the form with your channels, categories and volumes.
+              That's all we need to start.
+            </p>
+          </div>
+          <div class="step">
+            <span class="k">Step 2 — Call</span>
+            <h3>Elijah calls you</h3>
+            <p>
+              A quick call to hear how your business actually runs. No
+              catalogue, no mass blasts.
+            </p>
+          </div>
+          <div class="step">
+            <span class="k">Step 3 — Photos</span>
+            <h3>Photos of a matched lot</h3>
+            <p>
+              We send photos and counts of a lot that fits — see it before you
+              commit, then take it or don't. Dispatch Australia-wide from our
+              warehouse.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap">
+        <div class="sec-head">
+          <h2>Who We Supply</h2>
+          <div class="fill"></div>
+          <span class="code">Trade Buyers Only</span>
+        </div>
+        <div class="buyers">
+          <div class="buyer">
+            <h3>Live-Sale Streamers</h3>
+            <p>
+              Repeatable volume lines built for Whatnot and live-selling
+              formats. Consistent supply, fast cycles.
+            </p>
+          </div>
+          <div class="buyer">
+            <h3>Vintage &amp; Y2K Dealers</h3>
+            <p>
+              Graded band tees and era stock for curated stores, markets and
+              online vintage sellers.
+            </p>
+          </div>
+          <div class="buyer">
+            <h3>Resellers &amp; Exporters</h3>
+            <p>
+              eBay, Depop and marketplace sellers, plus international buyers
+              taking bulk export lots.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap">
+        <div class="sec-head">
+          <h2>Why Buyers Trust Us</h2>
+          <div class="fill"></div>
+          <span class="code">Proof Of Supply</span>
+        </div>
+        <div class="buyers">
+          <div class="buyer">
+            <h3>Backed By Real Volume</h3>
+            <p>
+              We supply established Whatnot and eBay sellers around Australia.
+              Buyers who can't afford inconsistent stock trust us for a reason —
+              if it holds up for them, it holds up for you.
+            </p>
+          </div>
+          <div class="buyer">
+            <h3>Direct Supplier Relationships</h3>
+            <p>
+              No middlemen, no marked-up resellers. Stock comes straight from
+              source — warehouses and vintage importers we've worked with for
+              years.
+            </p>
+          </div>
+          <div class="buyer">
+            <h3>Australia Wide</h3>
+            <p>
+              Australia-wide supply, dispatched from our Melbourne warehouse.
+              Fast domestic freight, plus export experience for international
+              buyers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="inquiry" id="inquiry">
+        <div class="wrap">
+          <h2>Get on the <span>stock list.</span></h2>
+          <p class="lede">
+            Tell us what you sell. We'll get in touch to hear how your business
+            runs. No public catalogue.
+          </p>
+
+          <!-- FORM SETUP: create a free Formspree account (formspree.io), make a form,
+           and replace YOUR_FORM_ID below. Submissions land in your email.
+           Alternative: delete this form and link the "Become a Buyer" buttons to a Google Form. -->
+          <form
+            action="https://formspree.io/f/meeyvlvw"
+            method="POST"
+            onsubmit="if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-18407151246/BHa6CKDG5OYcEI6tm8lE','value':1.0,'currency':'AUD'});}"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Rage Wholesale — stock list request"
+            />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Got it. We&#39;ll get in touch to hear how your business runs. Elijah, Rage, Melbourne"
+            />
+            <div class="field">
+              <label for="f-name">Name / Business</label>
+              <input
+                id="f-name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input
+                id="f-email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+        <div class="field">
+          <label for="f-mobile">Phone Number</label>
+          <input id="f-mobile" name="mobile" type="tel" inputmode="tel" autocomplete="tel" placeholder="04xx xxx xxx">
+        </div>
+            <div class="field">
+              <label for="f-channel">Where do you sell?</label>
+              <select id="f-channel" name="channel" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Live sales (Whatnot / TikTok Live)</option>
+                <option>eBay / Depop / marketplaces</option>
+                <option>Physical store or market stall</option>
+                <option>Export / international</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-msg">What stock are you after?</label>
+              <textarea
+                id="f-msg"
+                name="message"
+                placeholder="e.g. vintage band tees, 50–100 pc lots, monthly"
+              ></textarea>
+            </div>
+            <div class="field">
+              <label for="f-city">City</label>
+              <input
+                id="f-city"
+                name="city"
+                type="text"
+                autocomplete="address-level2"
+              />
+            </div>
+            <div class="field">
+              <label for="f-volume">Typical weekly volume</label>
+              <select id="f-volume" name="weekly_volume" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Under 20 pcs</option>
+                <option>20–100</option>
+                <option>100–500</option>
+                <option>500+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-whatnot">Whatnot seller?</label>
+              <select id="f-whatnot" name="whatnot_seller" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div>
+              <button class="btn primary" type="submit">
+                Get on the Stock List
+              </button>
+            </div>
+            <p class="form-note">
+              Trade buyers only. We match stock to your lane. We do not send a
+              public catalogue. · Replies within 1 business day · Dispatch:
+              Melbourne, AU
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© 2026 Rage Wholesale · Melbourne, Australia</span>
+        <span
+          ><a href="https://instagram.com/ragewholesale" rel="noopener"
+            >Instagram</a
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

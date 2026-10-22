@@ -2,17 +2,10 @@
 <html lang="en-AU">
 <head>
 <meta charset="UTF-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18407151246"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag("js", new Date());
-  gtag("config", "AW-18407151246");
-  gtag("config", "G-00ZDXS40L5");
-</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wholesale Clothing for Resellers Australia | Rage Wholesale</title>
+<link rel="preload" href="/fonts/archivo-latin-400.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+<link rel="preload" href="/fonts/archivo-black-latin.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="description" content="Wholesale clothing for Australian resellers, shipped from Melbourne. Branded activewear, vintage band tees and women's fashion. Tell us how you sell.">
 <meta name="theme-color" content="#efebe1">
 <meta property="og:type" content="website">
@@ -27,9 +20,6 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="/favicon-192.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Black&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -68,6 +58,11 @@
 }
 </script>
 <style>
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/archivo-latin-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/archivo-latin-600.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/archivo-black-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo Fallback';src:local('Arial'),local('Liberation Sans');size-adjust:101.37%;ascent-override:86.62%;descent-override:20.72%;line-gap-override:0%}
+@font-face{font-family:'Archivo Black Fallback';src:local('Arial Bold'),local('Liberation Sans Bold');size-adjust:113.89%;ascent-override:77.09%;descent-override:18.44%;line-gap-override:0%}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -77,14 +72,14 @@ a{color:inherit}
 .field{margin-bottom:9px}
 .field label{display:block;font-size:14px;font-weight:600;margin-bottom:3px}
 .field .opt{font-weight:400;opacity:.75}
-.field input,.field select,.field textarea{width:100%;font-family:'Archivo',sans-serif;font-size:17px;color:var(--ink);background:var(--fieldbg);border:1px solid var(--fieldline);border-radius:var(--rad);padding:9px 12px}
+.field input,.field select,.field textarea{width:100%;font-family:'Archivo','Archivo Fallback',sans-serif;font-size:17px;color:var(--ink);background:var(--fieldbg);border:1px solid var(--fieldline);border-radius:var(--rad);padding:9px 12px}
 .field textarea{min-height:0;height:auto;resize:vertical}
 .field ::placeholder{color:#6b6454;opacity:1}
 .row2{display:grid;grid-template-columns:1fr;gap:0}
 .fine{font-size:13.5px;line-height:1.45;margin-top:10px}
 .thanks,.fail{font-size:20px;padding:8px 0}
 .fail{font-size:16px;margin-top:12px}
-.btn{display:inline-block;font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;line-height:1.2;color:#fff;border:0;border-radius:var(--rad);padding:13px 26px;text-decoration:none;cursor:pointer;text-align:center}
+.btn{display:inline-block;font-family:'Archivo','Archivo Fallback',sans-serif;font-weight:600;font-size:17px;line-height:1.2;color:#fff;border:0;border-radius:var(--rad);padding:13px 26px;text-decoration:none;cursor:pointer;text-align:center}
 .btn:hover{filter:brightness(1.08)}
 .formcard .btn{width:100%}
 .btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
@@ -102,8 +97,8 @@ footer span a:first-child{margin-left:0}
 }
 
 :root{--paper:#efebe1;--ink:#151412;--red:#b3202c;--muted:#4f4a3f;--line:#cfc4ab;--fieldbg:#fbf9f3;--fieldline:#8a826f;--rad:4px;--focus:#6f5d3c}
-body{font-family:'Archivo',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:17px;line-height:1.5;color:var(--ink);background:var(--paper);-webkit-text-size-adjust:100%}
-.brand,h1{font-family:'Archivo Black','Archivo',sans-serif;font-weight:400}
+body{font-family:'Archivo','Archivo Fallback',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:17px;line-height:1.5;color:var(--ink);background:var(--paper);-webkit-text-size-adjust:100%}
+.brand,h1{font-family:'Archivo Black','Archivo Black Fallback','Archivo',sans-serif;font-weight:400}
 .brand{font-size:18px;letter-spacing:.02em;text-decoration:none}
 header{border-bottom:1px solid var(--line)}
 header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px}
@@ -131,7 +126,7 @@ h2.sec{font-size:26px;font-weight:600;line-height:1.2;margin-bottom:18px}
 .list li:first-child{border-top:2px solid var(--ink)}
 .note{color:var(--muted);margin-top:14px;max-width:40em}
 .steps{display:grid;grid-template-columns:1fr;gap:20px}
-.steps .n{font-family:'Archivo Black',sans-serif;font-size:28px;line-height:1;margin-bottom:8px}
+.steps .n{font-family:'Archivo Black','Archivo Black Fallback',sans-serif;font-size:28px;line-height:1;margin-bottom:8px}
 .steps h3{font-size:18px;font-weight:600;margin-bottom:4px}
 .steps p{color:var(--muted)}
 .about p{max-width:36em;font-size:19px}
@@ -234,6 +229,30 @@ h2.sec{font-size:26px;font-weight:600;line-height:1.2;margin-bottom:18px}
 </footer>
 <div class="sticky" id="sticky"><a class="btn" href="#request">Request a lot</a></div>
 <script>
+/* Ads (AW-18407151246) and GA4 (G-00ZDXS40L5). Commands queue immediately.
+   The library loads after first paint, or as soon as the form is used,
+   so it does not compete with the hero text. */
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "AW-18407151246");
+gtag("config", "G-00ZDXS40L5");
+function loadGtag(){
+  if(loadGtag.done) return;
+  loadGtag.done = true;
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=AW-18407151246";
+  document.head.appendChild(s);
+}
+window.addEventListener("load", function(){
+  if("requestIdleCallback" in window) requestIdleCallback(loadGtag, {timeout: 2500});
+  else setTimeout(loadGtag, 1);
+});
+setTimeout(loadGtag, 8000);
+["pointerdown","keydown"].forEach(function(ev){
+  window.addEventListener(ev, loadGtag, {once:true, passive:true, capture:true});
+});
 (function(){
   var q=new URLSearchParams(location.search);
   ["gclid","utm_source","utm_medium","utm_campaign","utm_term","utm_content"].forEach(function(k){
@@ -245,8 +264,10 @@ h2.sec{font-size:26px;font-weight:600;line-height:1.2;margin-bottom:18px}
   document.getElementById("h-referrer").value=document.referrer||"";
 
   var form=document.getElementById("leadForm");
+  form.addEventListener("focusin", loadGtag, {once:true});
   form.addEventListener("submit",function(e){
     e.preventDefault();
+    loadGtag();
     var btn=document.getElementById("submitBtn"); btn.disabled=true;
     var fd=new FormData(form);
     var trap=(fd.get("_gotcha")||"")!=="";

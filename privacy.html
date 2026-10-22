@@ -7,23 +7,27 @@
 <meta name="description" content="How Rage Wholesale handles the details you send through the enquiry form.">
 <meta name="theme-color" content="#efebe1">
 <link rel="canonical" href="https://ragewholesale.com.au/privacy.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Black&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-latin-400.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+<link rel="preload" href="/fonts/archivo-black-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/archivo-latin-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/archivo-latin-600.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/archivo-black-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo Fallback';src:local('Arial'),local('Liberation Sans');size-adjust:101.37%;ascent-override:86.62%;descent-override:20.72%;line-gap-override:0%}
+@font-face{font-family:'Archivo Black Fallback';src:local('Arial Bold'),local('Liberation Sans Bold');size-adjust:113.89%;ascent-override:77.09%;descent-override:18.44%;line-gap-override:0%}
 :root{--paper:#efebe1;--ink:#151412;--red:#b3202c;--muted:#4f4a3f;--line:#cfc4ab}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Archivo',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper)}
+body{font-family:'Archivo','Archivo Fallback',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper)}
 a{color:inherit}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-.brand{font-family:'Archivo Black','Archivo',sans-serif;font-size:18px;letter-spacing:.02em;text-decoration:none}
+.brand{font-family:'Archivo Black','Archivo Black Fallback','Archivo',sans-serif;font-size:18px;letter-spacing:.02em;text-decoration:none}
 .brand span{color:var(--red)}
 header{border-bottom:1px solid var(--line)}
 header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px}
 .navlink{font-weight:600;font-size:15px;text-decoration:none;border-bottom:2px solid var(--ink)}
 main{padding:48px 0 56px}
 main .wrap>*{max-width:40em}
-h1{font-family:'Archivo Black','Archivo',sans-serif;font-weight:400;font-size:clamp(30px,5vw,44px);line-height:1.1;margin-bottom:16px}
+h1{font-family:'Archivo Black','Archivo Black Fallback','Archivo',sans-serif;font-weight:400;font-size:clamp(30px,5vw,44px);line-height:1.1;margin-bottom:16px}
 h2{font-weight:600;font-size:22px;margin:32px 0 8px}
 p,li{color:var(--ink)}
 ul{padding-left:1.2em}
